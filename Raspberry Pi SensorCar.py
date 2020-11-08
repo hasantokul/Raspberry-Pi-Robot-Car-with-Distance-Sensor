@@ -108,11 +108,8 @@ class Car():
             gpio.cleanup()
             
         
-root1 = Tk()
 root = Tk()
-app = EezyBotArm(root)
-app1 = Car(root1)
-root.geometry("290x270+0+0")
-root1.geometry("200x200+300+40")
-root1.mainloop()
+app = Car(root)
+root.geometry("200x200+300+40")
 root.mainloop()
+
